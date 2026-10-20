@@ -1,0 +1,461 @@
+<!DOCTYPE html><html lang="ko" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#f8f9ff","error":"#ba1a1a","on-primary-fixed-variant":"#404758","on-surface-variant":"#45464c","error-container":"#ffdad6","on-tertiary-fixed-variant":"#004c6e","primary-fixed-dim":"#c0c6db","on-error-container":"#93000a","surface-bright":"#f8f9ff","on-background":"#0b1c30","on-secondary-fixed-variant":"#003ea8","secondary":"#0051d5","on-tertiary-container":"#008cc7","surface-container-highest":"#d3e4fe","on-tertiary":"#ffffff","tertiary-fixed-dim":"#89ceff","outline-variant":"#c6c6cd","on-secondary-container":"#fefcff","inverse-surface":"#213145","on-error":"#ffffff","surface-container-high":"#dce9ff","tertiary-fixed":"#c9e6ff","tertiary":"#000000","secondary-fixed-dim":"#b4c5ff","on-tertiary-fixed":"#001e2f","surface-variant":"#d3e4fe","on-secondary-fixed":"#00174b","surface":"#f8f9ff","surface-dim":"#cbdbf5","surface-container":"#e5eeff","surface-container-low":"#eff4ff","on-secondary":"#ffffff","on-primary-fixed":"#141b2b","surface-tint":"#575e70","outline":"#76777d","surface-container-lowest":"#ffffff","on-primary":"#ffffff","secondary-container":"#316bf3","inverse-on-surface":"#eaf1ff","on-surface":"#0b1c30","inverse-primary":"#c0c6db","primary-fixed":"#dce2f7","tertiary-container":"#001e2f","on-primary-container":"#7d8497","primary-container":"#141b2b","primary":"#000000","secondary-fixed":"#dbe1ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1rem","space-md":"0.75rem","margin":"1.5rem","space-xl":"1.5rem","space-xs":"0.25rem","gutter":"1rem","gutter-compact":"0.5rem","space-2xl":"2rem","space-sm":"0.5rem","space-2xs":"0.125rem"},"fontFamily":{"body-sm":["Inter"],"headline-xl":["Inter"],"headline-md":["Inter"],"label-lg":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"mono-data":["Inter"],"label-md":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-xl":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["13px",{"lineHeight":"16px","letterSpacing":"-0.005em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"12px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["22px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"mono-data":["12px",{"lineHeight":"16px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"14px","fontWeight":"500"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-surface-container-highest"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-outline-variant/40"><div class="h-14 w-full px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">deployed_code</span></div><span class="font-headline-md text-headline-md text-primary tracking-tight">Digital Room</span></div></div><nav class="flex items-center gap-space-xs bg-surface-container-low p-space-2xs rounded-full border border-outline-variant/30 shrink-0" data-active-classes="bg-primary text-on-primary font-label-md text-label-md"><a class="px-space-md py-space-2xs rounded-full text-on-surface-variant font-label-md text-label-md transition-colors hover:bg-surface-container hover:text-on-surface shrink-0" data-path="timeline-room" href="#">1. 홈 (디지털 룸 &amp; 타임라인)</a><a class="px-space-md py-space-2xs rounded-full text-on-surface-variant font-label-md text-label-md transition-colors hover:bg-surface-container hover:text-on-surface shrink-0" data-path="crimeboard-analysis" href="#">2. 크라임보드 (선택 구간 분석)</a><a class="px-space-md py-space-2xs rounded-full text-on-surface-variant font-label-md text-label-md transition-colors hover:bg-surface-container hover:text-on-surface shrink-0" data-path="similarity-compare" href="#">3. 유사대조 (삭제 여부 선택)</a><a class="px-space-md py-space-2xs rounded-full bg-primary text-on-primary font-label-md text-label-md transition-colors shrink-0" data-path="panorama-review" href="#">4. 파노라마 (그룹 상세 검토)</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-low rounded border border-outline-variant/30"><span class="inline-block w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">INDEXED: 14,280</span></div><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">rule</span><span class="">SYNCED</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-14 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Sub-Header & Metadata Strip -->
+<div class="w-full bg-surface-container-lowest px-margin py-space-md shadow-sm">
+<div class="max-w-[1392px] mx-auto flex flex-col gap-space-sm">
+<!-- Breadcrumb & Top Diagnostic Legend -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-on-surface-variant">
+<span class="">스크린 녹화 · 9/3~9/20</span>
+<span class="text-outline-variant">/</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">동영상 그룹</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-label-md text-label-md">가구별 분류 지정</span>
+</div>
+<!-- Strict Diagnostic Legend (No '확인 필요') -->
+<div class="flex items-center gap-space-md px-space-md py-space-2xs bg-surface-container-low rounded-full">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">진단 기준 범례:</span>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<span class="flex items-center gap-space-2xs text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-error"></span>흔들림(빨강)</span>
+<span class="flex items-center gap-space-2xs text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-orange-500"></span>비슷한 사진(주황)</span>
+<span class="flex items-center gap-space-2xs text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-yellow-500"></span>중복(노랑)</span>
+<span class="flex items-center gap-space-2xs text-secondary font-semibold"><span class="w-2 h-2 rounded-full bg-secondary"></span>보관·분류 권장(파랑)</span>
+<span class="flex items-center gap-space-2xs text-secondary-container"><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>선택 대기(옅은 파랑)</span>
+</div>
+</div>
+</div>
+<!-- Page Title & Operational Summary Line -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm pt-space-xs">
+<div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">동영상 파노라마 (가구별 분류 지정)</h1>
+<span class="px-space-sm py-space-2xs bg-secondary/10 text-secondary font-label-sm text-label-sm rounded-full">AI ARCHIVE ASSIGN</span>
+</div>
+<!-- Summary line with blue accent -->
+<div class="flex items-center gap-space-xs mt-space-2xs font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[16px]">folder_special</span>
+<span class="text-on-surface font-semibold">동영상 8개</span>
+<span class="text-outline-variant">·</span>
+<span class="text-secondary font-semibold">분류 제안 6개</span>
+<span class="text-outline-variant">·</span>
+<span class="text-secondary font-medium bg-secondary/10 px-1.5 py-0.5 rounded">선택 대기 2개</span>
+<span class="text-outline-variant">·</span>
+<span class="text-on-surface-variant">정리 후보 1개</span>
+<span class="text-outline-variant">|</span>
+<span class="text-on-surface-variant font-mono-data text-mono-data">미디어 가구(모니터·책상·바닥 상자)로 즉시 큐레이션 연결</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="px-space-md py-space-xs rounded-lg bg-surface-container font-mono-data text-mono-data text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">video_library</span>
+<span class="">VIDEO_ENGINE_STATUS: 100% RETENTION</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Canvas Stage: Horizontal 3-Group Sets Strip -->
+<div class="w-full px-margin py-space-xl">
+<div class="max-w-[1392px] mx-auto flex flex-col gap-space-xl">
+<!-- SET A: 수업 녹화 (3 items) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Set Header -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-2 h-5 bg-secondary rounded-full"></div>
+<h2 class="font-headline-md text-headline-md text-primary">세트 A. 수업 녹화</h2>
+<span class="px-space-sm py-space-2xs bg-surface-container font-mono-data text-mono-data text-on-surface-variant rounded">3개 영상</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">학습 슬라이드 및 화면 코드 레퍼런스 그룹</span>
+</div>
+<!-- Video Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card A-1: Recommendation Locked -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-md shadow-sm hover:shadow transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<!-- Keyframe Overlap Filmstrip Mockup -->
+<div class="relative w-full h-36 bg-surface-container rounded-lg overflow-hidden flex items-center justify-center p-2">
+<!-- Frame 1 -->
+<div class="absolute left-2 top-3 w-40 h-28 rounded shadow bg-cover bg-center opacity-85 rotate-[-2deg]" data-alt="Screen recording capture of a modern slide presentation showing algorithmic complexity formulas, white minimalist layout with technical typography in dark gray and royal blue highlights." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuD4JuGPUSXADfll3GaucPeexpaepxmtzF-2wLOPRndldC_LPIYvNcHWNJ9pGet4P_Z6eXE-NFsZNJNz6v5v0PU3Q4dKINjuEsxGzWDCIiKHnWHvsut58zGTop2ReFlwxOQyymSUJP2UMD4NNWb6BM_jN6Rv2iv83Hi2wtKruN85HZ_LZsY0omAazsg2JGxJmY1DvpvouMMAMNWd4cWlojBatZSo0d5xwbiotpSEZxw21qKP0TMCE3rJ&quot;);"></div>
+<!-- Frame 2 -->
+<div class="absolute left-16 top-2 w-40 h-28 rounded shadow-md bg-cover bg-center z-10" data-alt="Computer engineering lecture slide detailing binary search trees and recursion tree diagrams on a dark IDE interface with high contrast syntax coloring." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCOADmTqVgRArjngO8A6b-COBHdBeu47PjlSYvvzfFE0LPVl5JBrkn4Axt4MTXuPBnyrpH3MJP9w2RjviHzNmY7iDc4OsAWD0UTIsszy9L7LU0-DdDBtTHtckdl8CSmpCqzFBM0TmgOc0bfHn80ghQd4GQq5mVtLuN6wMIahXZS8aKqAHDJHQGO8fstn004YThPvzJpxcka_3ElhrHWFwb88v0e1Hye1lnv5pcT4f7u2pITLh6lB2dw&quot;);"></div>
+<!-- Frame 3 -->
+<div class="absolute right-2 top-4 w-36 h-26 rounded shadow bg-cover bg-center z-20 rotate-[1.5deg]" data-alt="Technical screen recording frame of terminal output displaying compiling unit tests with zero warnings, minimalist monochrome aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvf2i5ZIscSXpwZgXKMc-TQ32ucdMwQV57yv-arnLpScx6TTB6MoDyi7sBN4iQtBO5WQEMt1eNv781l7K_1FZSBYcMdQ7dtd50lO_Ze8sYOA7y1rcTG6GyhdvWbjUY0ulG53ZZDs7oXdknFT-g1Y0niStz9az8JjUYClpGU2fxXsBd6lSh9sG6-kVF2XsKziXiQ2KpC9re2IcZe4kogsUGg7Z4AruUSzeH9POtf_ozI9qMnpcIAfqv')"></div>
+<!-- Duration Badge -->
+<div class="absolute bottom-2 right-2 z-30 px-space-xs py-space-2xs bg-primary/80 backdrop-blur-sm text-on-primary font-mono-data text-label-sm rounded">
+                  03:42
+                </div>
+</div>
+<!-- Meta info -->
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">09/12 · #컴퓨터공학_3강</span>
+<span class="font-mono-data text-body-sm text-on-surface-variant">41.8 MB</span>
+</div>
+</div>
+<!-- Furniture Allocation Dropdown Pill -->
+<div class="pt-space-xs">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">추천 가구</label>
+<button class="w-full flex items-center justify-between px-space-md py-space-xs bg-surface-container-lowest text-on-surface rounded-full shadow-sm hover:bg-surface-container transition-colors" type="button">
+<span class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">desktop_windows</span>
+                  모니터
+                </span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Card A-2: Recommendation Locked -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-md shadow-sm hover:shadow transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<!-- Keyframe Overlap Filmstrip Mockup -->
+<div class="relative w-full h-36 bg-surface-container rounded-lg overflow-hidden flex items-center justify-center p-2">
+<div class="absolute left-2 top-3 w-40 h-28 rounded shadow bg-cover bg-center opacity-85 rotate-[-1.5deg]" data-alt="Screen recording capture of student Q and A chat panel adjacent to a lecture video slide, clean monotone light design." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCLMW95lWuCn2ZWhemRFb5ID31JaDim3kGe0fFZbl4qyJt3Z_-na7v96tu5TUuxtc-QS-VxHZOUPyAKAtRHLsdAZ0lAJQc0yPEF4ZS6MGBAn23HD8W3penrtJc1arLvBiBMU1vU5Fjy4_GFF2kzBYpWk472FiZEZ0WjM1U2aUb63qt7T0lR2ZU83fDIBderdWWynPAVofqJD7pbFq-PVVfm54Vh7TWbmSm_LPjjeQqd-fLzU8Ab_bAa&quot;);"></div>
+<div class="absolute left-16 top-2 w-40 h-28 rounded shadow-md bg-cover bg-center z-10" data-alt="Data structures Q and A whiteboard screen capture showing pointer linked lists and graph traversal paths drawn digitally in blue ink." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC3H993CIurt-wzSpcFwAPjZ-hnpJHBvD4TWq9LZFRqYBCRLopElcsuTTsTH5V-fr2t7Gc9OGrFM0EjLqT5hm4DqTsAENL9gYBtmr3tbZtt6qHB4_53QSAbSFryWWqBrjNTSop_zSnobP66CdSuT_LToSa8Qfu5sq9lOVwpB7v5rH2W4QLZVX5l0_1G260-ZbGrw-7WZWV-lp8bCq0ab_9PB7VnRdJcCbGswJMHLqtUhLfrInrNA24s&quot;);"></div>
+<div class="absolute right-2 top-4 w-36 h-26 rounded shadow bg-cover bg-center z-20 rotate-[2deg]" data-alt="Virtual classroom video conference window presenting professor slides on memory allocation with clean typography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGkgaKgJAmSWk6WtfacGxmhHhzpzhnlR6oQ4zJXrazNFQtT4Mgkt09NgfdUkC6yba_5P2TRaBAgLtNHiWYuJ5GA10w6hmabcLaKaphbf4E-vWv9BgU0I79SVHoTgWx8XwYL1IXxoFP7UTNDzhWn6Q_FAAUzxNNeeYWLFvbqR95Lif9lUI-apLwWD7zijNhZ4lVJBcb6Y_Ms68_bHGN1NcDalK1UbujHltEXHoGQrg5bHQ4-8n0pVv4')"></div>
+<div class="absolute bottom-2 right-2 z-30 px-space-xs py-space-2xs bg-primary/80 backdrop-blur-sm text-on-primary font-mono-data text-label-sm rounded">
+                  01:15
+                </div>
+</div>
+<!-- Meta info -->
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">09/15 · #자료구조_질의응답</span>
+<span class="font-mono-data text-body-sm text-on-surface-variant">18.4 MB</span>
+</div>
+</div>
+<!-- Furniture Allocation Dropdown Pill -->
+<div class="pt-space-xs">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">추천 가구</label>
+<button class="w-full flex items-center justify-between px-space-md py-space-xs bg-surface-container-lowest text-on-surface rounded-full shadow-sm hover:bg-surface-container transition-colors" type="button">
+<span class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">desktop_windows</span>
+                  모니터
+                </span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Card A-3: PENDING CHOICE (선택 대기) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between gap-space-md shadow-md bg-gradient-to-b from-secondary/5 via-transparent to-secondary/10">
+<div class="flex flex-col gap-space-sm">
+<!-- Pending Status Pill -->
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  선택해 주세요
+                </span>
+<span class="font-mono-data text-label-sm text-secondary font-medium">PENDING #1</span>
+</div>
+<!-- Keyframe Overlap Filmstrip Mockup -->
+<div class="relative w-full h-36 bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center p-2">
+<div class="absolute left-2 top-3 w-40 h-28 rounded shadow bg-cover bg-center opacity-85 rotate-[-2deg]" data-alt="Keyframe video capture of web seminar presentation showing design tokens and scalable UX architecture slides." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC6Y-v44cPwqAyko4A6gTkh93uo5zSE4nV2BPiqFuP3_TrviPfefK4P1cLhNelfea6-Y-s-rc3vcXcwg7OAli5BwQL0R9S5DbcKvQ7lW_lFEDdp7uZSu0B6MdcZygCHEhEu8Qu78P8V77tsRvgyRNmjoIC8xTcw4mmBEELB-W56HbDSeq6WoaaresSyHoZuMgzkk2lgCfEX0mmLnrlvAQg3CBtM2Nt2bD-XX-HFB57RuxUOm7Su8nGI&quot;);"></div>
+<div class="absolute left-16 top-2 w-40 h-28 rounded shadow-md bg-cover bg-center z-10" data-alt="Seminar screen recording displaying system diagram overview with architecture modular components in soft blue and slate." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCmOJTOGK2ObwhlW3OlR7kDUl50x4CgZJiBp4gxadi9kuwwS39URC-2TDrfxhmiXepRbBkM2mGIzcgEst9GYewxsafG7yLPWlYiOithS8XhqEgeUPT8cCr3pOLuBq9w-mX1Ycg4XPwyF2vs2CDDaVXO8BhKMYh-cQb_flNhYryhNRxveK0637Z5W3PEw9LQ5TQjvncdvAvMv4lECUDqh3NrmmKM_9TD9wVO03641HxtIN4-wIvNgXrx&quot;);"></div>
+<div class="absolute right-2 top-4 w-36 h-26 rounded shadow bg-cover bg-center z-20 rotate-[1deg]" data-alt="Seminar closing frame showing speaker notes and code repository address on desktop screen." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB7Hg1hFg9SXJ7BeOCvXodKLgMIrWfifLLYesiS6BsibFBj1UH4li2URA84kSiRuWLDlq8wn44e7K_75HClpDr-ioB8-W5C1EkAC7-y8_Q8khuwqGC6jon8EjVy1x-DlikV0dplxztqtu53IYyD5ksvc37StEwCKnqBPbTSbaZOEq_2SvwZHWVvl7PjuHbBA2px7pxgOVaQ-UO1Hql1Uql83whjVqj5L2a37so3v-J-v2iJlH69iSgG')"></div>
+<div class="absolute bottom-2 right-2 z-30 px-space-xs py-space-2xs bg-primary/80 backdrop-blur-sm text-on-primary font-mono-data text-label-sm rounded">
+                  02:20
+                </div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">09/16 · #세미나_화면녹화</span>
+<span class="font-mono-data text-body-sm text-on-surface-variant">28.9 MB</span>
+</div>
+</div>
+<!-- Choice Action Strip -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">help</span>
+                어디에 둘까요?
+              </span>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="choice-btn px-space-xs py-space-xs bg-surface-container-lowest hover:bg-secondary hover:text-on-secondary text-on-surface rounded font-label-md text-label-md font-medium text-center transition-colors shadow-sm" type="button">
+                  모니터
+                </button>
+<button class="choice-btn px-space-xs py-space-xs bg-surface-container-lowest hover:bg-secondary hover:text-on-secondary text-on-surface rounded font-label-md text-label-md font-medium text-center transition-colors shadow-sm" type="button">
+                  책상
+                </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SET B: 앱 사용법·튜토리얼 녹화 (3 items, Mobile 9:19.5 aspect) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Set Header -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-2 h-5 bg-secondary rounded-full"></div>
+<h2 class="font-headline-md text-headline-md text-primary">세트 B. 앱 사용법·튜토리얼 녹화</h2>
+<span class="px-space-sm py-space-2xs bg-surface-container font-mono-data text-mono-data text-on-surface-variant rounded">3개 영상</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">모바일 UI 상호작용 및 워크플로우 화면 기록</span>
+</div>
+<!-- Video Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card B-1: Recommendation Locked -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-md shadow-sm hover:shadow transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<!-- Smartphone 9:19.5 Triple Preview -->
+<div class="relative w-full h-44 bg-surface-container rounded-lg overflow-hidden flex items-center justify-center p-2">
+<div class="absolute left-8 top-2 w-16 h-36 rounded-md shadow bg-cover bg-center rotate-[-4deg] opacity-90" data-alt="Smartphone mobile banking UI video screen capture showing account selection step on sleek dark interface." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCzVmwnNR4uCajSdZm65vIi89Tpf5QOcXCU3r7lO-KxNrWAel2OM8FCDZIdxu4ZWHoJ2iRnnond9gA-YbKiYWkNXz33veOQeHzVb0Np2L5PMZfirJVEu2CPfUsKOxzAWCvKlvWldyej1nuQAUAiNkUSJRzY4Tv4esnFFSPCmyDfj1TzPGaD5ySoQ3z8kYb0EQ59o2DJY83uDhtIxzmU-HbjQ-Zyth03vmD8Pt-weI-DayrjJX4W_v4F&quot;);"></div>
+<div class="absolute left-24 top-1 w-18 h-38 rounded-md shadow-lg bg-cover bg-center z-10 scale-105" data-alt="Mobile banking remittance transfer confirmation screen recording showing keypad entry and biometric prompt mockup." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA2XttCIuIFa2QVkVlNCRlIEsAL7yFcG_frA5pyxAUGnLkY4VuFRexO3fkOHJ48L9acqo2FwKj6W9yUtAzcjnlGu22d1ajRLAcknpI6ztUj8n-yaPqra3RmauSCceZ9Y2YIVCeBVaMA5dJNSkQNXPKwPDae4l-V9N7SUVBvLoqQhbBHriic1uoyqRf6harQ78JPuh9NYoiUclQ8X7m755_hxQEjeruNvjgMZsPe9AGsPO3L1ek_uYSl')"></div>
+<div class="absolute right-8 top-3 w-16 h-36 rounded-md shadow bg-cover bg-center z-20 rotate-[3deg]" data-alt="Transfer completed screen showing receipt checkmark in vivid clean blue tone on smartphone screen." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCTlrHSSk4Yl2qRvdiQQN-mj0YAmMknWmGyf6H5npVS-WsRFQpXGI2Tw30eTv5He8w9jWTMdtrt8ycHnTezIm0pA6UC2MIv_bpOwjJEvBpnupqvTFz3R6FR0CVWE7hkHS_Q6QhyHsfgEyxwpCBW8U5ThXVNm6oWbjR2HjQu7s8lem0gjZGfsE6T6RPp0T3n7g5u7cbLWWMSewB260XV4212F6ARQIXaza-4o945qZ3jUFk9oUFCieXb&quot;);"></div>
+<div class="absolute bottom-2 right-2 z-30 px-space-xs py-space-2xs bg-primary/80 backdrop-blur-sm text-on-primary font-mono-data text-label-sm rounded">
+                  00:54
+                </div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">09/14 · #모바일뱅킹_송금방법</span>
+<span class="font-mono-data text-body-sm text-on-surface-variant">12.1 MB</span>
+</div>
+</div>
+<!-- Furniture Allocation Dropdown Pill -->
+<div class="pt-space-xs">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">추천 가구</label>
+<button class="w-full flex items-center justify-between px-space-md py-space-xs bg-surface-container-lowest text-on-surface rounded-full shadow-sm hover:bg-surface-container transition-colors" type="button">
+<span class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">table_restaurant</span>
+                  책상
+                </span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Card B-2: Recommendation Locked -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-md shadow-sm hover:shadow transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<!-- Smartphone 9:19.5 Triple Preview -->
+<div class="relative w-full h-44 bg-surface-container rounded-lg overflow-hidden flex items-center justify-center p-2">
+<div class="absolute left-8 top-2 w-16 h-36 rounded-md shadow bg-cover bg-center rotate-[-3deg] opacity-90" data-alt="Mobile design app screen recording showing canvas gesture pinch to zoom on vector graphics illustration." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuApg4ppF81HqvEv62V088D-2NkeI3G7fFG-UhheeJGiCq3CNMRGnuynza7N4dch03xRHwqLPREsLDSdN2JuQWf4fJf__iSkwWdU1dGf2vFpokOboCTvBZF2aIusqpSBZ8gE74Z57Lxlm9uIwl4exBpu7MIKxHWr5nKXfMsINgI4ezGNY8mSB8N9OdFjZ22hLRQykFqXBTcQoAWidoyGXGgzBYIEUV84x44PHmUPZ1tTwLuAdypiWHR8&quot;);"></div>
+<div class="absolute left-24 top-1 w-18 h-38 rounded-md shadow-lg bg-cover bg-center z-10 scale-105" data-alt="Creative stylus gesture drawing on smartphone app UI with layered color picker floating panel." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAEwUhocindPXnSN0j4hHGND7OHhOpTpUREsXDp-8eajLTKyn_RqBilBfB6Hct3jPKPb1IhHRH-QTBaBZSPp-e8e5n67-8kzA-nN8xD7YVdIuFQCRBjPshW-WQk9dN9gf_iKb3Y2-O5r0q5PwalPWbWrWYP1r1YsuuP-LKAEwOBo3YM7Ak5n8EscFja77yJmOnxcVNpPO41EbSuBBHwynnSNzdHuxDlFLEUlE0QxDHApyB-WxLa9Hgm')"></div>
+<div class="absolute right-8 top-3 w-16 h-36 rounded-md shadow bg-cover bg-center z-20 rotate-[4deg]" data-alt="Export settings modal inside mobile drawing app recorded cleanly." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDLuflWf3ozGjDzz24ZfN_t5qp00hy8BuDBH_gu2rJJCDR1u8hE4-gSXZ50W7yPc1I-kqR7C6AqaQVHKdg7rTWzalKSG6Lie0zwUHoTkAYN_Zi3ljDrvI9cO4wknixaeX1IOCep3mdq_h_2nMaXgaUHZ-lP7Yvp2_zGZfVZL1GqgJtvaL6KSAoLFZLuwqvKqhrl4XD8AAvrs5ZTfxPfk_C9ZVk-oU9KF0hvMt_PtHCOSpx-zOBasG6X&quot;);"></div>
+<div class="absolute bottom-2 right-2 z-30 px-space-xs py-space-2xs bg-primary/80 backdrop-blur-sm text-on-primary font-mono-data text-label-sm rounded">
+                  01:40
+                </div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">09/17 · #디자인툴_제스처</span>
+<span class="font-mono-data text-body-sm text-on-surface-variant">22.7 MB</span>
+</div>
+</div>
+<!-- Furniture Allocation Dropdown Pill -->
+<div class="pt-space-xs">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">추천 가구</label>
+<button class="w-full flex items-center justify-between px-space-md py-space-xs bg-surface-container-lowest text-on-surface rounded-full shadow-sm hover:bg-surface-container transition-colors" type="button">
+<span class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">table_restaurant</span>
+                  책상
+                </span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Card B-3: PENDING CHOICE (선택 대기) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between gap-space-md shadow-md bg-gradient-to-b from-secondary/5 via-transparent to-secondary/10">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  선택해 주세요
+                </span>
+<span class="font-mono-data text-label-sm text-secondary font-medium">PENDING #2</span>
+</div>
+<!-- Smartphone 9:19.5 Triple Preview -->
+<div class="relative w-full h-44 bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center p-2">
+<div class="absolute left-8 top-2 w-16 h-36 rounded-md shadow bg-cover bg-center rotate-[-4deg] opacity-90" data-alt="Smartphone system preferences screen recording navigating to cloud backup and sync menu." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC_R4CIVs4fBHdviGmIuUt7PtBjvxAWX031yiceBz_4ukVca2HgNwld7OBn0QGV0ZlOscBn8CGSBN6Nepg6T11Reryb7yAfc58gswJPJ2F_DV3Y_2A3VfyLKizFxesf4ZGDXz23mmiD4-UUuAjeQG6iunFlUnM9dnDptcPksIT5VwcQsGl0na-UMF6Hxe4W2gXnFTmId87EzvFuMCbnV4bV9JRVdmL2xbk8DZnnSckgC-qDyxA33HdG&quot;);"></div>
+<div class="absolute left-24 top-1 w-18 h-38 rounded-md shadow-lg bg-cover bg-center z-10 scale-105" data-alt="Cloud storage progress indicator on mobile settings screen recording in sharp monochrome gray and blue." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuApFnT8aUtohwNOsEe40x56J5gTAPNfKkMViDwiU1gBgVfw-3rQ6EKgczLBIrKgeE6txq5DceP_cw09cZ271Js4DT77YF3BcRL83YbMPBFU_LEgG7cOdUhH23rT8Ts_V86iezoyu_fgC9W9jxHRR4yAkouP1W564PULrcSQEnIUdKrVWeBPfXfvg1KGYus0xQW-5lCduP89fNqXAP_wVrsWwiLnuAy8I3XYChAvyoFM-RhbXM_Pn2mo')"></div>
+<div class="absolute right-8 top-3 w-16 h-36 rounded-md shadow bg-cover bg-center z-20 rotate-[3deg]" data-alt="Phone security toggle and backup completed confirmation screen frame." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAJqPGZmd3nhhJzr5_jbOtUhZJerzQF0XKyzwbMXrz1eK-8aWYfKlGUOKmjHnsKUeqB2Q0lAWrTHpj1kzeZ8uLB7UJwwtiQvP8kGbacV-vWljhpvSprzozdNQehXvYl-RH7YEgBt89wjMLe_X1AvuLRjM23YvrEFzXs06QOhm840qF57M0fiAgYNVLMY9Ujk8FbrMh8gNiS5v4whVhGQ6L4kfQ12Uq35zjXh718zmW1v9XbuI-8VOb5&quot;);"></div>
+<div class="absolute bottom-2 right-2 z-30 px-space-xs py-space-2xs bg-primary/80 backdrop-blur-sm text-on-primary font-mono-data text-label-sm rounded">
+                  00:48
+                </div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">09/19 · #설정_백업과정</span>
+<span class="font-mono-data text-body-sm text-on-surface-variant">9.8 MB</span>
+</div>
+</div>
+<!-- Choice Action Strip -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">help</span>
+                어디에 둘까요?
+              </span>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="choice-btn px-space-xs py-space-xs bg-surface-container-lowest hover:bg-secondary hover:text-on-secondary text-on-surface rounded font-label-md text-label-md font-medium text-center transition-colors shadow-sm" type="button">
+                  책상
+                </button>
+<button class="choice-btn px-space-xs py-space-xs bg-surface-container-lowest hover:bg-secondary hover:text-on-secondary text-on-surface rounded font-label-md text-label-md font-medium text-center transition-colors shadow-sm" type="button">
+                  모니터 서랍
+                </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SET C: 장소·길찾기 화면 녹화 (2 items) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Set Header -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-2 h-5 bg-secondary rounded-full"></div>
+<h2 class="font-headline-md text-headline-md text-primary">세트 C. 장소·길찾기 화면 녹화</h2>
+<span class="px-space-sm py-space-2xs bg-surface-container font-mono-data text-mono-data text-on-surface-variant rounded">2개 영상</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">지도 경로 및 대중교통 환승 안내 동영상 그룹</span>
+</div>
+<!-- Video Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Card C-1 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-md shadow-sm hover:shadow transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<!-- Keyframe Overlap Map Filmstrip -->
+<div class="relative w-full h-36 bg-surface-container rounded-lg overflow-hidden flex items-center justify-center p-2">
+<div class="absolute left-6 top-3 w-48 h-28 rounded shadow bg-cover bg-center rotate-[-1deg]" data-alt="Navigation app screen recording showing subway station exit route map in Seoul with walking path line in bold royal blue." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBoeNwELs535PPCiFASOPlQVm9W6wfnQDgpPZqzzsz1yDoIXk16p4O1-TEJScHowvMcC4rVYC0HsNiDq2_WH44bZaMEck5thWnA9H4YMW6mQJJVhq478GVwO1AlmjjPK51WYBhprXSQaisic9JFZTrIf1DfOXfVQmTYsFZ4UPZ3L-nTFj9K4T4KqxZcsSXpSd2MuaBk-RpwZg2l3Sdh64jwcKTEXFUyyHdNv9hwGmvRhk_Oxm2YMwJZ&quot;);"></div>
+<div class="absolute left-32 top-2 w-48 h-28 rounded shadow-md bg-cover bg-center z-10" data-alt="Detailed pedestrian street turn-by-turn navigation preview card on smartphone map app recorded video." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA-5gKT3D6-NEHIOfJoeqWz05L7ZdrrrAPW3R_9q_7t6Qtmmpt0nkZt7yaQ5_X7wcifjmQb6pxeWlNYUe8JbUkL2ZVdkhGb1rOqwOq6DWlatydDob38SiqMRAl-lEN1dSsSIihO3yTo8Y-86vvBNrKfKwUTdJ-0M_LCwks9VUh4StwsycBecTumgO1ZXJIx0ytOd4xm1QchBJVA_czuaIrrdLW_PuLm5C_MNF5JCqmf8EpadWPEbd8u&quot;);"></div>
+<div class="absolute right-6 top-4 w-44 h-26 rounded shadow bg-cover bg-center z-20 rotate-[2deg]" data-alt="Subway exit landmark destination pin screen capture with transit arrival time estimate." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWw-HUMZcJu2Wa7_jFMJnTrzMjlksZ6JYdSCumQwo7y1Vm78vZcg2HG7hhTuNccX_K8HGEKLCfiKlgzocE87TuranKEWHzsstH1A5Lhg_HiFnrkf9h2kMgUnaAV-W7uVpvRbwD3t9iw-xzAjhoWAQUDyyfhBMoG8_9gPU9MZsimR7InDrpYsXtz35Ti-MUgvRNvKaSdwmH0Q0mCSa8vet9etUcw90lE5isExc00Z19j8iOEWM81jev')"></div>
+<div class="absolute bottom-2 right-2 z-30 px-space-xs py-space-2xs bg-primary/80 backdrop-blur-sm text-on-primary font-mono-data text-label-sm rounded">
+                  01:05
+                </div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">09/18 · #강남역_출구_길안내</span>
+<span class="font-mono-data text-body-sm text-on-surface-variant">15.3 MB</span>
+</div>
+</div>
+<!-- Furniture Allocation Dropdown Pill -->
+<div class="pt-space-xs">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">추천 가구</label>
+<button class="w-full flex items-center justify-between px-space-md py-space-xs bg-surface-container-lowest text-on-surface rounded-full shadow-sm hover:bg-surface-container transition-colors" type="button">
+<span class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">inventory_2</span>현관문 (장소·길찾기)
+                </span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Card C-2 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-md shadow-sm hover:shadow transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<!-- Keyframe Overlap Map Filmstrip -->
+<div class="relative w-full h-36 bg-surface-container rounded-lg overflow-hidden flex items-center justify-center p-2">
+<div class="absolute left-6 top-3 w-48 h-28 rounded shadow bg-cover bg-center rotate-[-2deg]" data-alt="Transit route planning screen recording of airport railroad transfer timetable and platform numbers in clean graphic layout." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuD6Q4N9D1dfS4yX8Cde_NqED904bCqHR45vYHbrwdgt_pd-yW85NJFD3lVjZ5XxGxiCLGY0QNpJ1HQB6vm4RTCALY0IDEyBXiVKzdAUoqCub3qodycv_aljluAoSd2OpK4UGlYzQF9cczoc1BH5y5wiDmeF52BfHR88NjmDINaNffRQGsVbcJxWPHsGc_R03sCmI4TC09jsMCc9ntZAZn0qbO00nbLqCiFZlk4dU5_4qJlfV8NdjLgM&quot;);"></div>
+<div class="absolute left-32 top-2 w-48 h-28 rounded shadow-md bg-cover bg-center z-10" data-alt="Airport express train arrival animation and terminal step directions on map UI capture." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDykTlaHlvx3RmIpTQc3CEofS1XoJKBHtkwWtVScWtGQMC6Mo0tbVf7vB702VIfYW8V0sjstpXNjBSt9DK8CasmAwRAzqPbnieJve3Ax6eEBMDxhd8EyB9QWTONUywWTOnnIAbGp3n3HteBfYL-vGIJDgoCuamMlzkDhUjCcWEIPH8F0ovi5cJaao1b6mlVZkywudmjcHT19CkjykC-Wkdvb4wRF-RadFFUAhukkP4OCnLCJCQeNezK&quot;);"></div>
+<div class="absolute right-6 top-4 w-44 h-26 rounded shadow bg-cover bg-center z-20 rotate-[1.5deg]" data-alt="Digital indoor airport terminal navigation showing baggage claim direction vectors." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfBYh0v6IvHgafl9lnD2C3v8yPwBQzYzqIErCvil0-96aV2NphOWXMoMvNBUFv1WiQk3TCmF3oIoXY249xC-z1etbcxZG7Bm60xM-Mp1tSlXDoUAPBBUV558lWgKin_-8CkdpAybiev-f6jAmJUtBakwiBzR_MJViPNn5_kihsvOgpfmb4q_kg_jl5pj1C0hmC9V_kFOfOWbrW5zCjDtxFKjsuFeWJWQ3mQiSKHmTKUXqRn0mw4jMN')"></div>
+<div class="absolute bottom-2 right-2 z-30 px-space-xs py-space-2xs bg-primary/80 backdrop-blur-sm text-on-primary font-mono-data text-label-sm rounded">
+                  00:38
+                </div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">09/20 · #공항철도_환승루트</span>
+<span class="font-mono-data text-body-sm text-on-surface-variant">7.6 MB</span>
+</div>
+</div>
+<!-- Furniture Allocation Dropdown Pill -->
+<div class="pt-space-xs">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">추천 가구</label>
+<button class="w-full flex items-center justify-between px-space-md py-space-xs bg-surface-container-lowest text-on-surface rounded-full shadow-sm hover:bg-surface-container transition-colors" type="button">
+<span class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">inventory_2</span>현관문 (장소·길찾기)
+                </span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Bottom Workspace Control Dock -->
+<div class="w-full bg-surface-container-lowest mt-auto py-space-md shadow-lg sticky bottom-0 z-40">
+<div class="max-w-[1392px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md">
+<!-- Left side: Expandable subtle candidate + pipeline information -->
+<div class="flex flex-col gap-space-xs w-full md:w-auto">
+<!-- Collapsible Candidate Link -->
+<div class="flex items-center gap-space-md">
+<button class="group flex items-center gap-space-xs text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" id="toggle-candidate-btn" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline-variant group-hover:text-on-surface transition-transform duration-200" id="candidate-caret">expand_more</span>
+<span class="">정리 후보 1개 보기</span>
+</button>
+<div class="h-3 w-px bg-outline-variant/60"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            선택 대기 2개 분류 지정 시 총 8개 가구 자동 배치 완료 예정
+          </span>
+</div>
+<!-- Disclose Row for the 1 candidate video (Subtle, strictly neutral, NO RED) -->
+<div class="hidden items-center justify-between gap-space-md px-space-md py-space-xs bg-surface-container-low rounded-lg mt-space-2xs" id="candidate-box">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-mono-data text-body-sm text-on-surface">3초 미만 영상 · 검은 화면 (00:02 · 1.2 MB)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">유효 데이터 부재</span>
+</div>
+<!-- Clean neutral gray outline button (strictly no red) -->
+<button class="px-space-sm py-1 bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded transition-colors shadow-sm" type="button">
+            삭제
+          </button>
+</div>
+</div>
+<!-- Right side: Strictly [보류] and [분류 확정] only -->
+<div class="flex items-center gap-space-md shrink-0 w-full md:w-auto justify-end">
+<button class="px-space-xl py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-lg transition-colors" type="button">
+          보류
+        </button>
+<button class="px-space-2xl py-space-sm bg-primary hover:bg-neutral-900 text-on-primary font-label-lg text-label-lg rounded-lg flex items-center gap-space-xs transition-colors shadow-md" id="confirm-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="">분류 확정</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for expanding the neutral cleanup candidate
+  const toggleBtn = document.getElementById('toggle-candidate-btn');
+  const candidateBox = document.getElementById('candidate-box');
+  const caret = document.getElementById('candidate-caret');
+
+  if (toggleBtn && candidateBox && caret) {
+    toggleBtn.addEventListener('click', () => {
+      const isHidden = candidateBox.classList.contains('hidden');
+      if (isHidden) {
+        candidateBox.classList.remove('hidden');
+        candidateBox.classList.add('flex');
+        caret.classList.add('rotate-180');
+      } else {
+        candidateBox.classList.add('hidden');
+        candidateBox.classList.remove('flex');
+        caret.classList.remove('rotate-180');
+      }
+    });
+  }
+
+  // Interactive toggle behavior for Pending choice buttons
+  const choiceButtons = document.querySelectorAll('.choice-btn');
+  choiceButtons.forEach((btn) => {
+    btn.addEventListener('click', function () {
+      const parentGrid = this.parentElement;
+      const siblingButtons = parentGrid.querySelectorAll('.choice-btn');
+      siblingButtons.forEach(b => {
+        b.classList.remove('bg-secondary', 'text-on-secondary');
+        b.classList.add('bg-surface-container-lowest', 'text-on-surface');
+      });
+      this.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+      this.classList.add('bg-secondary', 'text-on-secondary');
+    });
+  });
+
+  // Confirm button feedback
+  const confirmBtn = document.getElementById('confirm-btn');
+  if (confirmBtn) {
+    confirmBtn.addEventListener('click', () => {
+      confirmBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>8개 동영상 가구 배치 완료</span>';
+      confirmBtn.classList.remove('bg-primary');
+      confirmBtn.classList.add('bg-secondary');
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 py-space-sm"><div class="w-full px-margin flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-md"><span class="font-mono-data text-mono-data">DIGITAL ROOM ARCHIVE ENGINE v2.4</span><span class="text-outline-variant">|</span><span class="">STRICT MONOTONE CLINICAL SUITE</span></div><div class="flex items-center gap-space-lg"><span class="flex items-center gap-space-2xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>OPERATIONAL 1440x900</span><span class="">© 2025 DIGITAL ROOM. ALL RIGHTS RESERVED.</span></div></div></footer>
+
+
+
+
+
+</body></html>
